@@ -73,7 +73,7 @@ with tab2:
 
         st.dataframe(latest[features])
     else:
-        st.error("Train the model first: python Src/train_models.py")
+        st.error("Model files are missing. Run training locally, or add model training to the deployed app.")
 
 with tab3:
     st.header("Backtest Results")
