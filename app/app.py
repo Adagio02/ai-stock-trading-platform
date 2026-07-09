@@ -13,40 +13,86 @@ st.set_page_config(page_title="AI Stock Trading Platform", layout="wide")
 st.title("AI Stock Trading Platform")
 st.caption("Research and paper-trading dashboard. Not financial advice.")
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "Live Prices",
     "Signals",
     "Backtest",
     "Model Metrics",
-    "Risk Controls"
+    "Risk Controls",
+    "Portfolio Research"
 ])
 
 with tab1:
     st.header("Live Price Viewer")
 
-    ticker = st.text_input("Ticker", "AAPL")
+    tickers = st.multiselect(
+        "Choose Stocks",
+        ["AAPL", "MSFT", "NVDA", "AMZN", "GOOGL", "META", "TSLA", "SPY", "QQQ"],
+        default=["AAPL", "MSFT"]
+    )
 
-    live = yf.download(ticker, period="6mo", auto_adjust=True)
+    period = st.selectbox(
+        "Time Period",
+        ["1mo", "3mo", "6mo", "1y", "2y", "5y"],
+        index=3
+    )
 
-    if not live.empty:
-        live = live.reset_index()
+    for ticker in tickers:
+        df = yf.download(
+            ticker,
+            period=period,
+            auto_adjust=True
+        )
 
-        if isinstance(live.columns, pd.MultiIndex):
-            live.columns = [col[0] for col in live.columns]
+        if df.empty:
+            st.warning(f"No data available for {ticker}")
+            continue
 
-        fig = px.line(
-            live,
-            x="Date",
-            y="Close",
-            title=f"{ticker} Closing Price"
+        df = df.reset_index()
+
+        if isinstance(df.columns, pd.MultiIndex):
+            df.columns = [col[0] for col in df.columns]
+
+        df["SMA_20"] = df["Close"].rolling(window=20).mean()
+        df["SMA_50"] = df["Close"].rolling(window=50).mean()
+
+        st.subheader(f"{ticker} Price Chart")
+
+        fig = go.Figure()
+
+        fig.add_trace(go.Scatter(
+            x=df["Date"],
+            y=df["Close"],
+            mode="lines",
+            name="Close"
+        ))
+
+        fig.add_trace(go.Scatter(
+            x=df["Date"],
+            y=df["SMA_20"],
+            mode="lines",
+            name="20-Day Moving Average"
+        ))
+
+        fig.add_trace(go.Scatter(
+            x=df["Date"],
+            y=df["SMA_50"],
+            mode="lines",
+            name="50-Day Moving Average"
+        ))
+
+        fig.update_layout(
+            title=f"{ticker} Price with Moving Averages",
+            xaxis_title="Date",
+            yaxis_title="Price",
+            hovermode="x unified",
+            height=500
         )
 
         st.plotly_chart(fig, use_container_width=True)
 
-        latest_close = float(live["Close"].iloc[-1])
-        st.metric("Latest Close", f"${latest_close:,.2f}")
-    else:
-        st.error("No live data found for this ticker.")
+        latest_close = float(df["Close"].iloc[-1])
+        st.metric(f"{ticker} Latest Close", f"${latest_close:,.2f}")
 
 with tab2:
     st.header("Buy/Sell Signal")
@@ -139,3 +185,31 @@ with tab5:
     st.metric("Suggested Position Size", f"{shares} shares")
     st.metric("Dollar Risk", f"${risk_amount:,.2f}")
     st.warning("This is for risk education and paper trading. Margin increases losses as well as gains.")
+
+with tab6:
+    st.header("Portfolio Research Dashboard")
+
+    if (BASE_DIR / "Reports" / "market_signals.csv").exists():
+        st.subheader("Market Screener")
+        signals = pd.read_csv(BASE_DIR / "Reports" / "market_signals.csv")
+        st.dataframe(signals, use_container_width=True)
+
+    if (BASE_DIR / "Reports" / "optimized_portfolio.csv").exists():
+        st.subheader("Optimized Portfolio")
+        portfolio = pd.read_csv(BASE_DIR / "Reports" / "optimized_portfolio.csv")
+        st.dataframe(portfolio, use_container_width=True)
+        st.bar_chart(portfolio.set_index("Ticker")["Weight"])
+
+    if (BASE_DIR / "Reports" / "walk_forward_results.csv").exists():
+        st.subheader("Walk-Forward Equity Curve")
+        wf = pd.read_csv(BASE_DIR / "Reports" / "walk_forward_results.csv")
+        st.line_chart(wf.set_index("Date")["Equity_Curve"])
+
+    if (BASE_DIR / "Reports" / "performance_metrics.csv").exists():
+        st.subheader("Performance Metrics")
+        metrics = pd.read_csv(BASE_DIR / "Reports" / "performance_metrics.csv")
+        st.dataframe(metrics)
+
+    if (BASE_DIR / "Reports" / "shap_summary.png").exists():
+        st.subheader("SHAP Feature Importance")
+        st.image(str(BASE_DIR / "Reports" / "shap_summary.png"))

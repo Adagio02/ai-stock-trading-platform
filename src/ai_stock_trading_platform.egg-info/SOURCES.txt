@@ -14,3 +14,5 @@ src/trading_platform/paper_trade.py
 src/trading_platform/risk.py
 src/trading_platform/train_lstm.py
 src/trading_platform/train_models.py
+tests/test_features.py
+tests/test_risk.py

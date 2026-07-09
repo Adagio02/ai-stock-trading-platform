@@ -1,0 +1,103 @@
+Ticker,Company_Name,Sector,Industry,First_Available_Date,Last_Available_Date,Total_Days,Market_Cap,IPO_Year
+AAPL,Apple Inc. Common Stock,Technology,Consumer Electronics,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,3986216452096,1985
+CMCSA,Comcast Corporation Class A Common Stock,Communication Services,Telecom Services,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,99514761216,1985
+PAYX,"Paychex, Inc. Common Stock",Technology,Software - Application,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,40603258880,1985
+PCAR,PACCAR Inc. Common Stock,Industrials,Farm & Heavy Construction Machinery,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,51617083392,1985
+HON,Honeywell International Inc. Common Stock,Industrials,Conglomerates,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,124380758016,1985
+PEP,"PepsiCo, Inc. Common Stock",Consumer Defensive,Beverages - Non-Alcoholic,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,193588019200,1985
+CSX,CSX Corporation Common Stock,Industrials,Railroads,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,65472733184,1985
+CTAS,Cintas Corporation Common Stock,Industrials,Specialty Business Services,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,74301128704,1985
+LRCX,Lam Research Corporation Common Stock,Technology,Semiconductor Equipment & Materials,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,203715493888,1985
+MU,"Micron Technology, Inc. Common Stock",Technology,Semiconductors,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,267517329408,1985
+XEL,Xcel Energy Inc. Common Stock,Utilities,Utilities - Regulated Electric,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,47642615808,1985
+KLAC,KLA Corporation Common Stock,Technology,Semiconductor Equipment & Materials,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,158511710208,1985
+TXN,Texas Instruments Incorporated Common Stock,Technology,Semiconductors,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,146633588736,1985
+AMGN,Amgen Inc. Common Stock,Healthcare,Drug Manufacturers - General,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,169939107840,1985
+AMD,"Advanced Micro Devices, Inc. Common Stock",Technology,Semiconductors,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,386985492480,1985
+AMAT,"Applied Materials, Inc. Common Stock",Technology,Semiconductor Equipment & Materials,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,186039910400,1985
+AEP,"American Electric Power Company, Inc. Common Stock",Utilities,Utilities - Regulated Electric,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,63980298240,1985
+INTC,Intel Corporation Common Stock,Technology,Semiconductors,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,177485856768,1985
+EXC,Exelon Corporation Common Stock,Utilities,Utilities - Regulated Electric,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,46088949760,1985
+ADP,"Automatic Data Processing, Inc. Common Stock",Technology,Software - Application,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,102066683904,1985
+ADI,"Analog Devices, Inc. Common Stock",Technology,Semiconductors,1985-01-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,10271,114566578176,1985
+ADSK,"Autodesk, Inc. Common Stock",Technology,Software - Application,1985-06-28 00:00:00-04:00,2025-11-05 00:00:00-05:00,10168,62805176320,1985
+ROST,"Ross Stores, Inc. Common Stock",Consumer Cyclical,Apparel Retail,1985-08-08 00:00:00-04:00,2025-11-05 00:00:00-05:00,10140,52111003648,1985
+MNST,Monster Beverage Corporation,Consumer Defensive,Beverages - Non-Alcoholic,1985-12-09 00:00:00-05:00,2025-11-05 00:00:00-05:00,10056,64746950656,1985
+MSFT,Microsoft Corporation Common Stock,Technology,Software - Infrastructure,1986-03-13 00:00:00-05:00,2025-11-05 00:00:00-05:00,9991,3694634991616,1986
+COST,Costco Wholesale Corporation Common Stock,Consumer Defensive,Discount Stores,1986-07-09 00:00:00-04:00,2025-11-05 00:00:00-05:00,9910,409311412224,1986
+ADBE,Adobe Inc. Common Stock,Technology,Software - Application,1986-08-13 00:00:00-04:00,2025-11-05 00:00:00-05:00,9885,137028714496,1986
+CCEP,Coca-Cola Europacific Partners plc Ordinary Shares,Consumer Defensive,Beverages - Non-Alcoholic,1986-11-24 00:00:00-05:00,2025-11-05 00:00:00-05:00,9813,40051159040,1986
+BKR,Baker Hughes Company Class A Common Stock,Energy,Oil & Gas Equipment & Services,1987-04-06 00:00:00-04:00,2025-11-05 00:00:00-05:00,9722,46664536064,1987
+CDNS,"Cadence Design Systems, Inc. Common Stock",Technology,Software - Application,1987-06-10 00:00:00-04:00,2025-11-05 00:00:00-05:00,9677,88315617280,1987
+FAST,Fastenal Company Common Stock,Industrials,Industrial Distribution,1987-08-20 00:00:00-04:00,2025-11-05 00:00:00-05:00,9627,46805417984,1987
+EA,Electronic Arts Inc. Common Stock,Communication Services,Electronic Gaming & Multimedia,1989-09-20 00:00:00-04:00,2025-11-05 00:00:00-05:00,9100,49975685120,1989
+CSCO,"Cisco Systems, Inc. Common Stock (DE)",Technology,Communication Equipment,1990-02-16 00:00:00-05:00,2025-11-05 00:00:00-05:00,8996,279949115392,1990
+REGN,"Regeneron Pharmaceuticals, Inc. Common Stock",Healthcare,Biotechnology,1991-04-02 00:00:00-05:00,2025-11-05 00:00:00-05:00,8714,67985690624,1991
+IDXX,"IDEXX Laboratories, Inc. Common Stock",Healthcare,Diagnostics & Research,1991-06-21 00:00:00-04:00,2025-11-05 00:00:00-05:00,8657,56993087488,1991
+VRTX,Vertex Pharmaceuticals Incorporated Common Stock,Healthcare,Biotechnology,1991-07-24 00:00:00-04:00,2025-11-05 00:00:00-05:00,8635,105610461184,1991
+BIIB,Biogen Inc. Common Stock,Healthcare,Drug Manufacturers - General,1991-09-17 00:00:00-04:00,2025-11-05 00:00:00-05:00,8597,22994114560,1991
+ODFL,"Old Dominion Freight Line, Inc. Common Stock",Industrials,Trucking,1991-10-24 00:00:00-04:00,2025-11-05 00:00:00-05:00,8570,28938051584,1991
+QCOM,QUALCOMM Incorporated Common Stock,Technology,Semiconductors,1991-12-13 00:00:00-05:00,2025-11-05 00:00:00-05:00,8535,186882801664,1991
+GILD,"Gilead Sciences, Inc. Common Stock",Healthcare,Drug Manufacturers - General,1992-01-22 00:00:00-05:00,2025-11-05 00:00:00-05:00,8509,153262800896,1992
+ROP,"Roper Technologies, Inc. Common Stock",Technology,Software - Application,1992-02-13 00:00:00-05:00,2025-11-05 00:00:00-05:00,8493,47842684928,1992
+SNPS,"Synopsys, Inc. Common Stock",Technology,Software - Infrastructure,1992-02-26 00:00:00-05:00,2025-11-05 00:00:00-05:00,8485,73582485504,1992
+LIN,Linde plc Ordinary Shares,Basic Materials,Specialty Chemicals,1992-06-17 00:00:00-04:00,2025-11-05 00:00:00-05:00,8407,193933230080,1992
+SBUX,Starbucks Corporation Common Stock,Consumer Cyclical,Restaurants,1992-06-26 00:00:00-04:00,2025-11-05 00:00:00-05:00,8400,93475913728,1992
+INTU,Intuit Inc. Common Stock,Technology,Software - Application,1993-03-12 00:00:00-05:00,2025-11-05 00:00:00-05:00,8221,182238101504,1993
+MCHP,Microchip Technology Incorporated Common Stock,Technology,Semiconductors,1993-03-19 00:00:00-05:00,2025-11-05 00:00:00-05:00,8216,32029988864,1993
+ORLY,"O'Reilly Automotive, Inc. Common Stock",Consumer Cyclical,Auto Parts,1993-04-23 00:00:00-04:00,2025-11-05 00:00:00-05:00,8192,80373071872,1993
+AZN,AstraZeneca PLC American Depositary Shares,Healthcare,Drug Manufacturers - General,1993-05-12 00:00:00-04:00,2025-11-05 00:00:00-05:00,8179,263322370048,1993
+CPRT,"Copart, Inc. (DE) Common Stock",Industrials,Specialty Business Services,1994-03-17 00:00:00-05:00,2025-11-05 00:00:00-05:00,7964,38694019072,1994
+ASML,ASML Holding N.V. New York Registry Shares,Technology,Semiconductor Equipment & Materials,1995-03-15 00:00:00-05:00,2025-11-04 00:00:00-05:00,7713,404685979648,1995
+TTWO,"Take-Two Interactive Software, Inc. Common Stock",Communication Services,Electronic Gaming & Multimedia,1997-04-15 00:00:00-04:00,2025-11-05 00:00:00-05:00,7187,46560280576,1997
+AMZN,"Amazon.com, Inc. Common Stock",Consumer Cyclical,Internet Retail,1997-05-15 00:00:00-04:00,2025-11-05 00:00:00-05:00,7165,2598150078464,1997
+MAR,Marriott International Class A Common Stock,Consumer Cyclical,Lodging,1998-03-23 00:00:00-05:00,2025-11-05 00:00:00-05:00,6951,75444428800,1998
+MSTR,Strategy Inc Common Stock Class A,Technology,Software - Application,1998-06-11 00:00:00-04:00,2025-11-05 00:00:00-05:00,6895,68160303104,1998
+CTSH,Cognizant Technology Solutions Corporation Class A Common Stock,Technology,Information Technology Services,1998-06-19 00:00:00-04:00,2025-11-05 00:00:00-05:00,6889,35151142912,1998
+CSGP,"CoStar Group, Inc. Common Stock",Real Estate,Real Estate Services,1998-07-01 00:00:00-04:00,2025-11-05 00:00:00-05:00,6881,28548702208,1998
+NVDA,NVIDIA Corporation Common Stock,Technology,Semiconductors,1999-01-22 00:00:00-05:00,2025-11-05 00:00:00-05:00,6740,4579183820800,1999
+BKNG,Booking Holdings Inc. Common Stock,Consumer Cyclical,Travel Services,1999-03-31 00:00:00-05:00,2025-11-05 00:00:00-05:00,6693,157915070464,1999
+ON,ON Semiconductor Corporation Common Stock,Technology,Semiconductors,2000-05-02 00:00:00-04:00,2025-11-05 00:00:00-05:00,6418,19957929984,2000
+ISRG,"Intuitive Surgical, Inc. Common Stock",Healthcare,Medical Instruments & Supplies,2000-06-16 00:00:00-04:00,2025-11-05 00:00:00-05:00,6386,194185871360,2000
+MRVL,"Marvell Technology, Inc. Common Stock",Technology,Semiconductors,2000-06-30 00:00:00-04:00,2025-11-05 00:00:00-05:00,6376,80459792384,2000
+MDLZ,"Mondelez International, Inc. Class A Common Stock",Consumer Defensive,Confectioners,2001-06-13 00:00:00-04:00,2025-11-05 00:00:00-05:00,6137,72505245696,2001
+AXON,"Axon Enterprise, Inc. Common Stock",Industrials,Aerospace & Defense,2001-06-19 00:00:00-04:00,2025-11-05 00:00:00-05:00,6133,46331490304,2001
+NFLX,"Netflix, Inc. Common Stock",Communication Services,Entertainment,2002-05-23 00:00:00-04:00,2025-11-05 00:00:00-05:00,5903,464842850304,2002
+TRI,Thomson Reuters Corporation Common Shares,Industrials,Specialty Business Services,2002-06-12 00:00:00-04:00,2025-11-05 00:00:00-05:00,5890,61844238336,2002
+GOOG,Alphabet Inc. Class C Capital Stock,Communication Services,Internet Content & Information,2004-08-19 00:00:00-04:00,2025-11-05 00:00:00-05:00,5339,3440261464064,2004
+GOOGL,Alphabet Inc. Class A Common Stock,Communication Services,Internet Content & Information,2004-08-19 00:00:00-04:00,2025-11-05 00:00:00-05:00,5339,3438460796928,2004
+DXCM,"DexCom, Inc. Common Stock",Healthcare,Medical Devices,2005-04-14 00:00:00-04:00,2025-11-05 00:00:00-05:00,5175,22628743168,2005
+WBD,"Warner Bros. Discovery, Inc. Series A Common Stock",Communication Services,Entertainment,2005-07-08 00:00:00-04:00,2025-11-05 00:00:00-05:00,5116,55506812928,2005
+TMUS,"T-Mobile US, Inc. Common Stock",Communication Services,Telecom Services,2007-04-19 00:00:00-04:00,2025-11-05 00:00:00-05:00,4669,224831012864,2007
+LULU,lululemon athletica inc. Common Stock,Consumer Cyclical,Apparel Retail,2007-07-27 00:00:00-04:00,2025-11-05 00:00:00-05:00,4600,19395258368,2007
+MELI,"MercadoLibre, Inc. Common Stock",Consumer Cyclical,Internet Retail,2007-08-10 00:00:00-04:00,2025-11-05 00:00:00-05:00,4590,107900338176,2007
+KDP,Keurig Dr Pepper Inc. Common Stock,Consumer Defensive,Beverages - Non-Alcoholic,2008-05-07 00:00:00-04:00,2025-11-05 00:00:00-05:00,4404,35812253696,2008
+AVGO,Broadcom Inc. Common Stock,Technology,Semiconductors,2009-08-06 00:00:00-04:00,2025-11-05 00:00:00-05:00,4089,1679225782272,2009
+VRSK,"Verisk Analytics, Inc. Common Stock",Industrials,Consulting Services,2009-10-07 00:00:00-04:00,2025-11-05 00:00:00-05:00,4046,29668239360,2009
+FTNT,"Fortinet, Inc. Common Stock",Technology,Software - Infrastructure,2009-11-18 00:00:00-05:00,2025-11-05 00:00:00-05:00,4016,61715066880,2009
+CHTR,"Charter Communications, Inc. Class A Common Stock New",Communication Services,Telecom Services,2010-01-05 00:00:00-05:00,2025-11-05 00:00:00-05:00,3985,28193124352,2010
+TSLA,"Tesla, Inc. Common Stock",Consumer Cyclical,Auto Manufacturers,2010-06-29 00:00:00-04:00,2025-11-05 00:00:00-05:00,3864,1483015979008,2010
+NXPI,NXP Semiconductors N.V. Common Stock,Technology,Semiconductors,2010-08-06 00:00:00-04:00,2025-11-05 00:00:00-05:00,3837,51958194176,2010
+META,"Meta Platforms, Inc. Class A Common Stock",Communication Services,Internet Content & Information,2012-05-18 00:00:00-04:00,2025-11-05 00:00:00-05:00,3387,1560055382016,2012
+PANW,"Palo Alto Networks, Inc. Common Stock",Technology,Software - Infrastructure,2012-07-20 00:00:00-04:00,2025-11-05 00:00:00-05:00,3344,143070199808,2012
+WDAY,"Workday, Inc. Class A Common Stock",Technology,Software - Application,2012-10-12 00:00:00-04:00,2025-11-05 00:00:00-05:00,3285,59941498880,2012
+FANG,"Diamondback Energy, Inc. Common Stock",Energy,Oil & Gas E&P,2012-10-12 00:00:00-04:00,2025-11-05 00:00:00-05:00,3285,40383561728,2012
+CDW,CDW Corporation Common Stock,Technology,Information Technology Services,2013-06-27 00:00:00-04:00,2025-11-05 00:00:00-05:00,3110,18430214144,2013
+SHOP,Shopify Inc. Class A Subordinate Voting Shares,Technology,Software - Application,2015-05-20 00:00:00-04:00,2025-11-05 00:00:00-05:00,2633,203922227200,2015
+PYPL,"PayPal Holdings, Inc. Common Stock",Financial Services,Credit Services,2015-07-06 00:00:00-04:00,2025-11-05 00:00:00-05:00,2602,61996302336,2015
+KHC,The Kraft Heinz Company Common Stock,Consumer Defensive,Packaged Foods,2015-07-06 00:00:00-04:00,2025-11-05 00:00:00-05:00,2602,28076308480,2015
+TEAM,Atlassian Corporation Class A Common Stock,Technology,Software - Application,2015-12-09 00:00:00-05:00,2025-11-05 00:00:00-05:00,2492,41079537664,2015
+TTD,"The Trade Desk, Inc. Class A Common Stock",Communication Services,Advertising Agencies,2016-09-21 00:00:00-04:00,2025-11-05 00:00:00-05:00,2295,22442479616,2016
+ZS,"Zscaler, Inc. Common Stock",Technology,Software - Infrastructure,2018-03-16 00:00:00-04:00,2025-11-05 00:00:00-05:00,1922,50326999040,2018
+PDD,PDD Holdings Inc. American Depositary Shares,Consumer Cyclical,Internet Retail,2018-07-26 00:00:00-04:00,2025-11-05 00:00:00-05:00,1831,194122465280,2018
+CRWD,"CrowdStrike Holdings, Inc. Class A Common Stock",Technology,Software - Infrastructure,2019-06-12 00:00:00-04:00,2025-11-05 00:00:00-05:00,1611,133638635520,2019
+DDOG,"Datadog, Inc. Class A Common Stock",Technology,Software - Application,2019-09-19 00:00:00-04:00,2025-11-05 00:00:00-05:00,1542,66547548160,2019
+PLTR,Palantir Technologies Inc. Class A Common Stock,Technology,Software - Infrastructure,2020-09-30 00:00:00-04:00,2025-11-05 00:00:00-05:00,1282,417220526080,2020
+DASH,"DoorDash, Inc. Class A Common Stock",Consumer Cyclical,Internet Retail,2020-12-09 00:00:00-05:00,2025-11-04 00:00:00-05:00,1232,83926695936,2020
+ABNB,"Airbnb, Inc. Class A Common Stock",Consumer Cyclical,Travel Services,2020-12-10 00:00:00-05:00,2025-11-05 00:00:00-05:00,1232,73792765952,2020
+APP,Applovin Corporation Class A Common Stock,Communication Services,Advertising Agencies,2021-04-15 00:00:00-04:00,2025-11-04 00:00:00-05:00,1146,210174967808,2021
+GFS,GlobalFoundries Inc. Ordinary Shares,Technology,Semiconductors,2021-10-28 00:00:00-04:00,2025-11-05 00:00:00-05:00,1010,19102124032,2021
+CEG,Constellation Energy Corporation Common Stock,Utilities,Utilities - Independent Power Producers,2022-01-19 00:00:00-05:00,2025-11-05 00:00:00-05:00,954,109748068352,2022
+GEHC,GE HealthCare Technologies Inc. Common Stock,Healthcare,Health Information Services,2022-12-15 00:00:00-05:00,2025-11-05 00:00:00-05:00,725,33786036224,2022
+ARM,Arm Holdings plc American Depositary Shares,Technology,Semiconductors,2023-09-14 00:00:00-04:00,2025-11-04 00:00:00-05:00,538,167628521472,2023
+SOLS,Solstice Advanced Materials Inc. Common Stock,Technology,Semiconductor Equipment & Materials,2025-10-20 00:00:00-04:00,2025-11-05 00:00:00-05:00,13,7145655808,2025

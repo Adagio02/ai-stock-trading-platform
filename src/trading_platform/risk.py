@@ -20,3 +20,9 @@ def calculate_position_size(
 
 risk_per_trade = 0.01
 max_leverage = 1.0
+
+def calculate_stop_loss(entry_price, stop_percent=0.03):
+    return round(entry_price * (1 - stop_percent), 2)
+
+def calculate_take_profit(entry_price, reward_percent=0.06):
+    return round(entry_price * (1 + reward_percent), 2)
