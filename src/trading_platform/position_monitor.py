@@ -5,6 +5,7 @@ import yfinance as yf
 from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import MarketOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
+from trading_platform.trade_logger import log_trade
 
 
 PAPER = True
@@ -51,8 +52,7 @@ def main():
         print("No trade log found.")
         return
 
-    trade_log = pd.read_csv(TRADE_LOG_PATH)
-
+    trade_log = pd.read_csv(TRADE_LOG_PATH, on_bad_lines="skip")
     if trade_log.empty:
         print("Trade log is empty.")
         return
@@ -65,7 +65,7 @@ def main():
 
         ticker_trades = trade_log[
             (trade_log["Ticker"] == ticker) &
-            (trade_log["Signal"] == "BUY")
+            (trade_log["Action"] == "BUY")
         ]
 
         if ticker_trades.empty:
@@ -101,26 +101,21 @@ def main():
         if exit_reason:
             print(f"Selling {qty} shares of {ticker}: {exit_reason}")
 
-            sell_position(client, ticker, qty)
+            try:
+                sell_position(client, ticker, qty)
+            except Exception as e:
+                print(f"Error submitting sell order for {ticker}: {e}")
+                continue
 
-            exit_log = pd.DataFrame([{
-                "Ticker": ticker,
-                "EntryPrice": entry_price,
-                "ExitPrice": current_price,
-                "StopLoss": stop_loss,
-                "TakeProfit": take_profit,
-                "Shares": qty,
-                "Signal": "SELL",
-                "Reason": exit_reason,
-                "PnL": (current_price - entry_price) * qty,
-                "Time": pd.Timestamp.now()
-            }])
-
-            exit_log.to_csv(
-                TRADE_LOG_PATH,
-                mode="a",
-                header=False,
-                index=False
+            log_trade(
+                ticker=ticker,
+                action="SELL",
+                shares=qty,
+                price=current_price,
+                stop_loss=stop_loss,
+                take_profit=take_profit,
+                reason=exit_reason,
+                pnl=(current_price - entry_price) * qty
             )
         else:
             print("No exit triggered.")

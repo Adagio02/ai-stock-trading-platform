@@ -7,6 +7,8 @@ from alpaca.trading.enums import OrderSide, TimeInForce
 
 from trading_platform.risk import calculate_stop_loss, calculate_take_profit
 
+from trading_platform.trade_logger import log_trade
+
 
 PAPER = True
 MAX_TRADES_PER_DAY = 3
@@ -23,15 +25,14 @@ def get_client():
     return TradingClient(api_key, secret_key, paper=PAPER)
 
 
-def place_order(client, symbol, qty, side):
-    order = MarketOrderRequest(
-        symbol=symbol,
+def place_order(client, ticker, qty, side):
+    order_request = MarketOrderRequest(
+        symbol=ticker,
         qty=qty,
         side=OrderSide.BUY if side == "buy" else OrderSide.SELL,
-        time_in_force=TimeInForce.DAY,
+        time_in_force=TimeInForce.DAY
     )
-
-    return client.submit_order(order)
+    return client.submit_order(order_request)
 
 
 def main():
@@ -61,22 +62,16 @@ def main():
 
         place_order(client, ticker, qty, "buy")
 
-        trade_log = pd.DataFrame([{
-            "Ticker": ticker,
-            "EntryPrice": price,
-            "StopLoss": stop,
-            "TakeProfit": take_profit,
-            "Shares": qty,
-            "Signal": "BUY",
-            "Time": pd.Timestamp.now()
-        }])
-
-        trade_log.to_csv(
-            "Reports/trade_log.csv",
-            mode="a",
-            header=not os.path.exists("Reports/trade_log.csv"),
-            index=False
-        )
+        log_trade(
+    ticker=ticker,
+    action="BUY",
+    shares=qty,
+    price=price,
+    stop_loss=stop,
+    take_profit=take_profit,
+    reason="AI Buy Signal",
+    pnl=None
+)
 
 if __name__ == "__main__":
     main()

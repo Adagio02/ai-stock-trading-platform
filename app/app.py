@@ -213,3 +213,14 @@ with tab6:
     if (BASE_DIR / "Reports" / "shap_summary.png").exists():
         st.subheader("SHAP Feature Importance")
         st.image(str(BASE_DIR / "Reports" / "shap_summary.png"))
+
+        trade_log_path = BASE_DIR / "Reports" / "trade_log.csv"
+
+if trade_log_path.exists():
+    st.subheader("Trade History")
+    trades = pd.read_csv(trade_log_path)
+    st.dataframe(trades, use_container_width=True)
+
+    if "PnL" in trades.columns:
+        realized_pnl = trades["PnL"].fillna(0).sum()
+        st.metric("Realized Paper PnL", f"${realized_pnl:,.2f}")
