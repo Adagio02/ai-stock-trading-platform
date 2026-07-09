@@ -2,7 +2,7 @@ import pandas as pd
 import yfinance as yf
 from pathlib import Path
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
+# accuracy_score not used; import removed
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 

@@ -1,9 +1,16 @@
-$ErrorActionPreference = "Stop"
+$LogFile = "Reports\daily_bot_log.txt"
 
-Write-Host "Running daily paper-trading bot..."
+Start-Transcript -Path $LogFile -Append
+
+Write-Host "Starting Daily Trading Bot..."
+Write-Host "Time: $(Get-Date)"
 
 python -m trading_platform.market_screener
+
 python -m trading_platform.auto_trader
+
 python -m trading_platform.position_monitor
 
-Write-Host "Daily paper-trading bot complete."
+Write-Host "Finished Daily Trading Bot"
+
+Stop-Transcript

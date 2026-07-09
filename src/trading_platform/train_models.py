@@ -2,7 +2,6 @@ import joblib
 import pandas as pd
 from pathlib import Path
 
-from sklearn.model_selection import TimeSeriesSplit
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.ensemble import RandomForestClassifier
@@ -11,8 +10,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from xgboost import XGBClassifier
 
 from trading_platform.data import download_data
-from trading_platform.trading_platform.features import add_features
-
+from trading_platform.features import add_features
 
 Path("Models").mkdir(exist_ok=True)
 Path("Reports").mkdir(exist_ok=True)
