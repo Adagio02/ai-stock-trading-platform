@@ -6,11 +6,7 @@ from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import MarketOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
 from trading_platform.trade_logger import log_trade
-
-
-PAPER = True
-TRADE_LOG_PATH = "Reports/trade_log.csv"
-
+from trading_platform.config import PAPER, TRADE_LOG_PATH
 
 def get_client():
     api_key = os.getenv("ALPACA_API_KEY")
@@ -76,9 +72,10 @@ def main():
 
         stop_loss = float(latest_trade["StopLoss"])
         take_profit = float(latest_trade["TakeProfit"])
-        entry_price = float(latest_trade["EntryPrice"])
+        entry_price = float(latest_trade["Price"])
 
         current_price = get_latest_price(ticker)
+        unrealized_return = (current_price - entry_price) / entry_price
 
         if current_price is None:
             print(f"Could not get price for {ticker}.")
@@ -94,9 +91,12 @@ def main():
 
         if current_price <= stop_loss:
             exit_reason = "Stop Loss Hit"
-
         elif current_price >= take_profit:
             exit_reason = "Take Profit Hit"
+        elif unrealized_return >= 0.04:
+            new_stop = max(stop_loss, entry_price * 1.01)
+            stop_loss = new_stop
+            print(f"Trailing stop moved to ${stop_loss:.2f}")
 
         if exit_reason:
             print(f"Selling {qty} shares of {ticker}: {exit_reason}")

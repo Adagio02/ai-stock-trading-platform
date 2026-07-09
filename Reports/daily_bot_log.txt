@@ -1,0 +1,29 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260709134634
+Username: DESKTOP-K31RHT8\ftaru
+RunAs User: DESKTOP-K31RHT8\ftaru
+Configuration Name: 
+Machine: DESKTOP-K31RHT8 (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\ftaru\AppData\Local\Programs\Microsoft VS Code\4fe60c8b1c\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 30908
+PSVersion: 5.1.26100.8655
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8655
+BuildVersion: 10.0.26100.8655
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Reports\daily_bot_log.txt
+Starting Daily Trading Bot...
+Time: 07/09/2026 13:46:34
+
+
+
+Finished Daily Trading Bot
+**********************
+Windows PowerShell transcript end
+End time: 20260709134832
+**********************
